@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define ShortCompany = "Konvolucio" ?>
+  <?define LongCompany =  "Konvolúció Bt." ?>
+  <?define MajorVersion = "0"?>
+  <?define MinorVersion = "0"?>
+  <?define BuildNumber  = "0"?> <!-- VS: The default build number increments daily. -->
+  <!-- Revision is NOT used by WiX in the upgrade procedure -->
+  <!--The default revision number is the number of seconds since midnight local time, divided by 2.-->
+  <?define Revision = "0"?>
+  
+  <!-- Full version number to display -->
+  <?define VersionNumber  = "$(var.MajorVersion).$(var.MinorVersion).$(var.BuildNumber).$(var.Revision)"?>
+  <?define ProductName = "MDFU200325 - MATL Device Firmware Upgrade Tool"?>
+  <?define ProductCode = "{545083A7-D8E0-404F-9AAC-591AD25A111B}"?>
+  
+  
+  <?define URL = "https://github.com/marrob"?>
+
+  <!--
+  Upgrade code HAS to be the same for all updates.
+  Once you've chosen it don't change it.
+  -->
+  <?define UpgradeCode = "{B50EC05A-AE1B-4FCA-9AA3-09671979CAE3}"?>
+
+  <!--
+  The name of your application exe file. This will be used to kill the process when updating
+  and creating the desktop shortcut
+  -->
+  <?define ExeProcessName="Konvolucio.MDFU200325.exe" ?>
+
+  <!--
+  CopyRight.
+  -->
+  <?define CopyrightMessage = "sa"?>
+
+
+  <!--
+  Global Paths.
+  -->
+  <?define AppDirectory               = "..\Knv.MALT200817.DFU\bin\x86\Release"?>
+  <?define AppResourceDirectory       = "..\Resources"?>
+  <?define FirmwareDirectory          = "..\Resources\Firmwares\"?>
+                                            
+  
+  
+</Include>
+
